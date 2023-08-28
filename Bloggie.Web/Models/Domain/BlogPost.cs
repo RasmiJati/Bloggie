@@ -13,5 +13,9 @@
         public DateTime PublishedDate { get; set; }
         public string Author { get; set; }
         public bool Visible { get; set; }
+
+        //show many to many relationship
+        public ICollection<Tag> Tags{ get; set; }  //1 blog having many tags
+
     }
 }
