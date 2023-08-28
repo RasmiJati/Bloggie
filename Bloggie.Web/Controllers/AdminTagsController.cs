@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Bloggie.Web.Models.ViewModels;
+using Microsoft.AspNetCore.Mvc;
 
 namespace Bloggie.Web.Controllers
 {
@@ -10,15 +11,11 @@ namespace Bloggie.Web.Controllers
             return View();
         }
 
-        //go to the below method when submit the form 
         [HttpPost]
-        [ActionName("Add")]
-        public IActionResult SubmitTag()
+        public IActionResult Add(AddTagRequest addTagRequest)
         {
-            //Two ways to submit and read data using Read incoming request approach
-
-            //var name = Request.Form["name"]; //Form["name"] -> name is the name from Add.cshtml input name
-            //var displayName = Request.Form["displayName"];
+            var name = addTagRequest.Name;
+            var displayName = addTagRequest.DisplayName;
             return View("Add");
         }
     }
