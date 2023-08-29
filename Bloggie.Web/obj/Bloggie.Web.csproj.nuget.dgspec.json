@@ -49,6 +49,14 @@
               "suppressParent": "All",
               "target": "Package",
               "version": "[7.0.10, )"
+            },
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+              "target": "Package",
+              "version": "[7.0.9, )"
+            },
+            "fullcalendar": {
+              "target": "Package",
+              "version": "[3.9.0, )"
             }
           },
           "imports": [

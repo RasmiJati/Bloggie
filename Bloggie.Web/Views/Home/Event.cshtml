@@ -1,0 +1,25 @@
+﻿@model IEnumerable<Event>
+
+@{
+    ViewData["Title"] = "Events";
+}
+
+<h1>Add New Event</h1>
+
+
+<div class="container" py-5>
+    <form method="post" asp-controller="Home" asp-action="Calendar">
+        <div class="mb-3">
+            <label class="form-label">Title</label>
+            <input type="text" class="form-control" id="name" style="width: 220px "/>
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Date</label>
+            <input type="date" class="form-control" id="date" style="width: 220px "/>
+        </div>
+        <div class="mb-3">
+            <button type="submit" class="btn btn-dark">Save</button>
+            <a asp-controller="Home" asp-action="Calendar" class=" btn btn-secondary" style="width: 150px">Back to Calendar </a>
+        </div>
+    </form>
+</div>

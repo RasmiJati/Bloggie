@@ -15,6 +15,11 @@ namespace Bloggie.Web.Controllers
             _bloggieDbContext = bloggieDbContext;
         }
 
+        public IActionResult Index()
+        {
+            return View();
+        }
+
         [HttpGet]
         public IActionResult Add()
         {
@@ -31,6 +36,26 @@ namespace Bloggie.Web.Controllers
                 DisplayName = addTagRequest.DisplayName
             };
             _bloggieDbContext.Tags.Add(tag);
+            _bloggieDbContext.SaveChanges();
+            return View("Add");
+        }
+
+        [HttpGet]
+        public IActionResult Delete()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        public IActionResult Delete(AddTagRequest addTagRequest)
+        {
+            //Mapping the AddTagRequest model to Tag Domain model
+            var tag = new Tag
+            {
+                Name = addTagRequest.Name,
+                DisplayName = addTagRequest.DisplayName
+            };
+            _bloggieDbContext.Tags.Remove(tag);
             _bloggieDbContext.SaveChanges();
             return View("Add");
         }

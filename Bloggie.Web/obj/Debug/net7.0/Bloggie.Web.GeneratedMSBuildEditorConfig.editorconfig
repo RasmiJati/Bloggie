@@ -20,6 +20,22 @@ build_property._RazorSourceGeneratorDebug =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5UYWdzXEFkZC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[D:/.net/web/Bloggie/Bloggie.Web/Views/AdminTags/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5UYWdzXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/.net/web/Bloggie/Bloggie.Web/Views/AdminTags/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5UYWdzXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/.net/web/Bloggie/Bloggie.Web/Views/Home/Calendar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxDYWxlbmRhci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/.net/web/Bloggie/Bloggie.Web/Views/Home/Event.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxFdmVudC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/.net/web/Bloggie/Bloggie.Web/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
